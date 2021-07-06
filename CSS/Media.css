@@ -1,0 +1,150 @@
+@media (max-width: 1024px) {
+
+    .nav_toggle {
+        display: inline-block;
+    }
+
+    .header_nav_list {
+        display: none;
+    }
+
+    #nav_toggle:checked ~ .header_nav_list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header_nav_list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #49cc3d8f;
+        opacity: 0.8;
+        padding: 5%;
+        min-width: 50%;
+        height: 100vh;
+    }
+
+    .header_nav_list li:not(:first-child) {
+        margin: 0;
+    }
+
+    .header_nav_list li a {
+        margin-bottom: 40px;
+    }
+
+    .header_nav_list a {
+        color: #ffffff;
+        text-shadow: 5px 0 5px #000;
+        font-size: 24px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .service_content_list {
+        flex-wrap: wrap;
+        padding-top: 10px;
+    }
+
+    .service_item:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .main_projects {
+        background-size: 580px 500px;
+        background-position-y: 240px;
+    }
+
+    .projects_dev {
+        max-width: 100%;
+    }
+
+    .footer_top_wrapper {
+        flex-wrap: wrap;
+    }
+
+    .footer_top_list {
+        min-width: 250px;
+    }
+
+    .footer_top_tweets {
+        max-width: 350px;
+        margin: 0 auto;
+        margin-top: 30px;
+
+    }
+}
+
+@media (max-width: 768px) {
+
+    .main_preview h1 {
+        font-size: 50px;
+    }
+
+    .header_wrapper {
+        margin: 20px 0;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    .main_projects {
+        background-size: 480px 400px;
+        background-position-y: 230px;
+    }
+}
+
+@media(max-width: 425px) {
+
+    .main_preview h1 {
+        font-size: 40px;
+    }
+    
+    .header_wrapper {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 20px 0;
+    }
+
+    .service_content h2,
+    .main_advantages h2,
+    .main_projects .project_content h2 {
+        font-size: 30px;
+    }
+
+    .preview_wrapper,
+    .service_wrapper {
+        justify-content: center;
+    }
+
+    .main_projects {
+        background-size: 380px 300px;
+        background-position-y: 230px;
+    }
+
+    .projects_dev_list .dev_list {
+        flex-wrap: wrap;
+    }
+
+    .footer_top h3 {
+        font-size: 20px;
+    }
+
+    .footer_bot_wrapper {
+        flex-direction: column;
+    }
+
+    .footer_bot_copyrigth {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .footer_bot_social {
+        padding: 10px 0;
+    }
+
+}
