@@ -20,6 +20,7 @@ a {
     font-weight: 800;
     font-size: 16px;
     cursor: pointer;
+    transition: 0.5s linear;
 }
 
 .button:hover {
@@ -75,6 +76,50 @@ a {
 
 .header_nav {
     margin-left: auto;
+    display: flex;
+}
+
+#nav_toggle {
+    display: none;
+}
+
+.nav_toggle {
+    display: none;
+    color: #555555;
+    position: relative;
+    width: 35px;
+    height: 7px;
+    background-color: currentColor;
+    border: 0;
+}
+  
+.nav_toggle:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 35px;
+    height: 7px;
+    background-color: currentColor;
+}
+  
+.nav_toggle:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 35px;
+    height: 7px;
+    background-color: currentColor;
+}
+
+.nav_toggle label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .header_nav_list {
@@ -106,14 +151,9 @@ section {
     background-size: 100% 100%;
 }
 
-.bg_fon {
-    background-color: #000;
-    opacity: 0.7;
-    height: 530px;
-}
-
 .preview_wrapper {
     display: flex;
+    justify-content: center;
 }
 
 .main_preview h1 {
@@ -557,10 +597,12 @@ section {
     background-image: url(../Images/Twitter_footer.png);
     background-repeat: no-repeat;
     background-position: center;
+    transition: 1s ease-in-out;
 }
 
 .social_tw_img:hover {
     background-color: #00aced;
+    transform: scale(1.5);
 }
 
 .social_fb_img {
@@ -572,10 +614,12 @@ section {
     background-image: url(../Images/Facebook_footer.png);
     background-repeat: no-repeat;
     background-position: center;
+    transition: 1s ease-in-out;
 }
 
 .social_fb_img:hover {
     background-color: #3b5998;
+    transform: scale(1.5);
 }
 
 .social_pint_img {
@@ -587,10 +631,12 @@ section {
     background-image: url(../Images/Pinterest_footer.png);
     background-repeat: no-repeat;
     background-position: center;
+    transition: 1s ease-in-out;
 }
 
 .social_pint_img:hover {
     background-color: #cb2028;
+    transform: scale(1.5);
 }
 
 .social_g_img {
@@ -601,9 +647,11 @@ section {
     background-color: #222;
     background-image: url(../Images/Google_footer.png);
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
+    transition: 1s ease-in-out; 
 }
 
 .social_g_img:hover {
     background-color: #da2713;
+    transform: scale(1.5);
 }
